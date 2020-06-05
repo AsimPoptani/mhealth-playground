@@ -3,6 +3,11 @@ import glob
 # Warning takes 7 seconds to load
 # Gives data in a dictionary on the mhealth dataset: [ {id:id,data: 2DArrayOfRawData ,file_location:fileLocation},{id:id,data: 2DArrayOfRawData ,file_location:fileLocation}]
 def mhealth_get_dataset(dir_to_files = './mhealth-data/'):
+    ''' Returns a dictionary of subjects.
+
+    This DocString is a test to make sure git is working! 
+    '''
+
     # get our file uris
     files_uri=glob.glob(dir_to_files+'*.log')
 
