@@ -34,7 +34,7 @@ Have many Simple neural network which try and predict one classifcation and each
 ____________________________________________________________________
 # Temporary thoughts after some data exploration
 
-I blurted out some initial thoughts as well on that main md but this was before I took a dive into the data. So, I have some more concise ideas now.
+I blurted out some initial thoughts as well on that main md but this was before I took a dive into the data. So, I have some more informed ideas now.
 
 I played around with the read data script you made to get some ideas. I then made a separate iPython notebook to see data structure and some messy maths and get an idea of how these targets will work for any models we make. It's quite interesting: for each of the 10 subjects, the last column 23 (0-23 so 24th) range from possible values from 0 to 12 corresponding to each activity with 0 looking like to be no activity I believe. There are 161280 rows/records. Each row has 23 sensor readings (columns 0-22) and then in column 23 (24th column in 0-23) is the classification of what activity is occurring. A classic Multi-label classification problem. 
 
