@@ -8,7 +8,7 @@ Function `mhealth_get_dataset(dir_to_files = './mhealth-data/')` is a helper fun
 
 ### CNN
 
-Have a CNN which takes in an image out of the data which is normalised between 0-255 in a square for each attribute. May not work as data is continuos in one direction only not two.
+Have a CNN which is a X by 23 (number of sensors) image and use a softmax to predict classes.
 
 ### Simple neural network
 
