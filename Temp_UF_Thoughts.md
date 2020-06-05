@@ -37,7 +37,7 @@ Have a simple neural network which takes X readings from each column and then ha
 
 Same as Simple neural network but with a LSTM. Since the data is temporal (correct me if I am wrong) we can use a LSTM to learn from previous history.
 
-**UF11: This might be a good shout if we are predicting the actual values of the sensors ie a time-series regression performed by an LSTM RNN. Once trained maybe it would take in last 20 values then predict the next value and repeatedly do this (using the predicted value for as history for its next prediction). We would get a pretty good prediction of the sensor of what future sensor reading would be. **
+**UF11: This might be a good shout if we are predicting the actual values of the sensors ie a time-series regression performed by an LSTM RNN. Once trained maybe it would take in last 20 values then predict the next value and repeatedly do this (using the predicted value for as history for its next prediction). We would get a pretty good prediction of the sensor of what future sensor reading would be.**
 
 If we are predicting the activity through then time-series classification LSTM model might be the way to go. Something I am not familiar with but may allow us to get way better results than using simple binary classification.
 
