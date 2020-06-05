@@ -43,5 +43,13 @@ def mhealth_get_dataset(dir_to_files = './mhealth-data/'):
 
 
 if __name__ == "__main__":
+    # Dirty testing 
+    import time
+    print("--- start ---")
+    start_time = time.time()
+
     lst = mhealth_get_dataset()
-    print(lst)
+    print("length of lst: ", len(lst))
+
+    print("--- end ---")
+    print("--- %s seconds ---" % (time.time() - start_time))
