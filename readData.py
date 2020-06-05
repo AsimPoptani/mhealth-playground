@@ -41,4 +41,7 @@ def mhealth_get_dataset(dir_to_files = './mhealth-data/'):
     return subjects
 
 
-mhealth_get_dataset()
+
+if __name__ == "__main__":
+    lst = mhealth_get_dataset()
+    print(lst)
