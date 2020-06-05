@@ -1,5 +1,5 @@
 
-
+# Temporary thoughts after some data exploration
 
 I blurted out some initial thoughts as well on that main md but this was before I took a dive into the data. So, I have some more concise ideas now.
 
