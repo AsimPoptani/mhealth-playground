@@ -40,8 +40,6 @@ def mhealth_get_dataset(dir_to_files = './mhealth-data/'):
         subjects.append(subject)
     return subjects
 
-
-
 if __name__ == "__main__":
     # Dirty testing 
     import time
