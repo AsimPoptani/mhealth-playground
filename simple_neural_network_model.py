@@ -1,4 +1,4 @@
-from readData import mhealth_get_dataset
+from helper_functions import mhealth_get_dataset
 import random
 import tensorflow as tf
 
@@ -14,14 +14,15 @@ random.seed(123)
 dataset=mhealth_get_dataset()
 
 # shuffle dataset
-shuffled_dataset=random.shuffle(dataset)
+random.shuffle(dataset)
 
 # get 8 training users and 2 test users
-training_users,test_users = shuffled_dataset[:8], shuffled_dataset[8:]
+training_users,test_users = dataset[:8], dataset[8:]
 
 previous=None
-user=training_users[0]
-for classifcation in user[23]:
+user=training_users[0]['data']
+for data in user:
+    classifcation=data[23]
     if not previous==classifcation:
         previous=classifcation
         print(classifcation)
