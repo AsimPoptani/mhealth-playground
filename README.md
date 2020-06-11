@@ -14,10 +14,11 @@ Function `mhealth_get_dataset(dir_to_files = './mhealth-data/')` is a helper fun
 
 ## Authors
 
-Asim Poptani
+### Asim Poptani
 
-Umer Fakher
+### Umer Fakher
 
+Ready to develop in a hospital near you.
 ________________________________________________________________________________________________________________________________________
 ## Messy Thoughts during Development
 
