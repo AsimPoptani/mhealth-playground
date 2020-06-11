@@ -130,18 +130,21 @@ test_labels=labels[training_labels_len:]
 # Okay lets create our model
 model = tf.keras.models.Sequential([
     tf.keras.layers.Dense(data_length*23), # Our input layer
-    tf.keras.layers.Dense(2000,activation=tf.keras.activations.relu),
-    tf.keras.layers.Dense(2000),
+    # tf.keras.layers.Dense(2000,activation=tf.keras.activations.relu),
+    # tf.keras.layers.Dense(2000),
+    tf.keras.layers.Dense(500,activation=tf.keras.activations.relu),
+    tf.keras.layers.Dense(500),
+
 
     # tf.keras.layers.Dense(13,activation=tf.keras.activations.softmax) # Our output layer we have 13 classifcations # removing 0 to see affect on validation accuracy
     tf.keras.layers.Dense(12,activation=tf.keras.activations.softmax) # Without 0
 
 ])
 # Compile our model
-model.compile(loss='categorical_crossentropy', optimizer=tf.keras.optimizers.Adam(), metrics=['accuracy'])
+model.compile(loss='binary_crossentropy', optimizer=tf.keras.optimizers.Adam(), metrics=['accuracy'])
 
 
-model.fit(training_data,training_labels,validation_data=(test_data,test_labels),epochs=200)#100
+model.fit(training_data,training_labels,validation_data=(test_data,test_labels),epochs=100)#100
 # -9.2305,3.9479,-4.0236,0.10884,-0.058608,3.4836,-7.467,-8.0885,0.24675,-0.78799,-0.21807,0.19791,18.714,5.4366,2.2399,-5.5648,7.5238,0.47255,-0.25051,1.0172,9.3079,-2.787,-15.309,9
 # -8.6677,3.5852,-4.5615,-0.054422,0.22606,-0.75304,-7.1983,-5.9716,0.24675,-0.78799,-0.21807,0.25394,7.7039,9.586,-0.92224,-5.7833,9.6692,0.47255,-0.25051,1.0172,4.6822,1.4321,-15.444,9
 

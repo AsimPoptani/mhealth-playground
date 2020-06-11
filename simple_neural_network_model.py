@@ -6,7 +6,7 @@ from collections import defaultdict
 
 # Hyperparameters
 # This is how many samples per col
-data_length = 2
+data_length = 1
 
 # Prep data
 
@@ -17,7 +17,7 @@ dataset=mhealth_get_dataset()
 # shuffle dataset
 random.shuffle(dataset)
 
-# get 8 training users and 2 test users
+# get 6 training users and 4 test users
 training_users,test_data = dataset[:6], dataset[6:]
 
 training_data_pre  = defaultdict(list) 
@@ -98,11 +98,15 @@ model = tf.keras.models.Sequential([
 
 ])
 # Compile our model
-model.compile(loss='categorical_crossentropy', optimizer=tf.keras.optimizers.Adam(), metrics=['accuracy'])
+model.compile(loss='binary_crossentropy', optimizer=tf.keras.optimizers.Adam(), metrics=['accuracy'])
 
 model.fit(training_data,training_labels,validation_data=(test_data,test_labels),epochs=100)
 # -9.2305,3.9479,-4.0236,0.10884,-0.058608,3.4836,-7.467,-8.0885,0.24675,-0.78799,-0.21807,0.19791,18.714,5.4366,2.2399,-5.5648,7.5238,0.47255,-0.25051,1.0172,9.3079,-2.787,-15.309,9
 # -8.6677,3.5852,-4.5615,-0.054422,0.22606,-0.75304,-7.1983,-5.9716,0.24675,-0.78799,-0.21807,0.25394,7.7039,9.586,-0.92224,-5.7833,9.6692,0.47255,-0.25051,1.0172,4.6822,1.4321,-15.444,9
-test_array = np.array([[-9.2305,3.9479,-4.0236,0.10884,-0.058608,3.4836,-7.467,-8.0885,0.24675,-0.78799,-0.21807,0.19791,18.714,5.4366,2.2399,-5.5648,7.5238,0.47255,-0.25051,1.0172,9.3079,-2.787,-15.309,-8.6677,3.5852,-4.5615,-0.054422,0.22606,-0.75304,-7.1983,-5.9716,0.24675,-0.78799,-0.21807,0.25394,7.7039,9.586,-0.92224,-5.7833,9.6692,0.47255,-0.25051,1.0172,4.6822,1.4321,-15.444]])
+# test_array = np.array([[-9.2305,3.9479,-4.0236,0.10884,-0.058608,3.4836,-7.467,-8.0885,0.24675,-0.78799,-0.21807,0.19791,18.714,5.4366,2.2399,-5.5648,7.5238,0.47255,-0.25051,1.0172,9.3079,-2.787,-15.309,-8.6677,3.5852,-4.5615,-0.054422,0.22606,-0.75304,-7.1983,-5.9716,0.24675,-0.78799,-0.21807,0.25394,7.7039,9.586,-0.92224,-5.7833,9.6692,0.47255,-0.25051,1.0172,4.6822,1.4321,-15.444]])
 
-print(model.predict([test_array])[0][8]*100)
+# print(model.predict([test_array])[0][8]*100)
+
+# data_length = 1
+# Epoch 100/100
+# 157/157 [==============================] - 0s 287us/sample - loss: 0.2621 - acc: 0.9569 - val_loss: 0.6089 - val_acc: 0.9144

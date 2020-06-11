@@ -1,5 +1,8 @@
 # mhealth-playground
 
+# We found a soloution
+
+
 ### readData.py
 
 Function `mhealth_get_dataset(dir_to_files = './mhealth-data/')` is a helper function. Which will convert the log files into a **dictionary :** `[ {id:id,data: 2DArrayOfRawData ,file_location:fileLocation},{id:id,data: 2DArrayOfRawData ,file_location:fileLocation}]`

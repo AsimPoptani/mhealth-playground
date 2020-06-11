@@ -92,10 +92,8 @@ test_labels=labels[training_labels_len:]
 # Okay lets create our model
 model = tf.keras.models.Sequential([
     tf.keras.layers.Dense(data_length*23), # Our input layer
-    # tf.keras.layers.Dense(500,activation=tf.keras.activations.relu),
     tf.keras.layers.Dense(500,activation=tf.keras.activations.relu),
     # tf.keras.layers.Dense(500),
-    # tf.keras.layers.Dense(13,activation=tf.keras.activations.softmax) # Our output layer we have 13 classifcations
     tf.keras.layers.Dense(13,activation=tf.keras.activations.softmax) # Our output layer we have 13 classifcations
 
 ])
