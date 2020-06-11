@@ -2,10 +2,10 @@
 
 ## Data Science Lifecycle
 
-####* 0_Exploring_Data_Structure.ipynb                    (Playing Around)
-####* 1_Data_Analysis_CorrMatrix_&_DataDist.ipynb	        (Pretty Diagrams)
-####* 2_Umer_and_Asim_SoftMax_Classifier.py               (Just the same as notebook without some formatting)
-####* 2_Umer_and_Asim_SoftMax_Classifier_Notebook.ipynb	  (Main Solution)
+* #### 0_Exploring_Data_Structure.ipynb                    (Playing Around)
+* #### 1_Data_Analysis_CorrMatrix_&_DataDist.ipynb	        (Pretty Diagrams)
+* #### 2_Umer_and_Asim_SoftMax_Classifier.py               (Just the same as notebook without some formatting)
+* #### 2_Umer_and_Asim_SoftMax_Classifier_Notebook.ipynb	  (Main Solution)
 
 #### helper_functions.py
 Currently used for reading data.
