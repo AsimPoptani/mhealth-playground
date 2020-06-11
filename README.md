@@ -7,6 +7,14 @@
 * 2_Umer_and_Asim_SoftMax_Classifier.py               (Just the same as notebook without some formatting)
 * 2_Umer_and_Asim_SoftMax_Classifier_Notebook.ipynb	  (Main Solution)
 
+# Authors
+
+Asim Poptani
+
+Umer Fakher
+
+________________________________________________________________________________________________________________________________________
+# Messy Thoughts during Development
 
 ### ReadData
 
