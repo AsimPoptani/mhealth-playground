@@ -48,7 +48,8 @@ Have many Simple neural network which try and predict one classifcation and each
 **UF:** Can also test Sigmoid function to see how it holds up for binary classification. We could try binary classification first and show the performance then move onto multivariate SoftMax classification then play around with the rest, play around and compare.
 
 ____________________________________________________________________
-# Temporary thoughts after some data exploration
+### Temporary thoughts after some data exploration
+-UF
 
 I blurted out some initial thoughts as well on that main md but this was before I took a dive into the data. So, I have some more informed ideas now.
 
