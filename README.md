@@ -1,9 +1,14 @@
 # mhealth-playground
 
-# We found a soloution
+# Data Science Lifecycle
+
+* 0_Exploring_Data_Structure.ipynb                    (Playing Around)
+* 1_Data_Analysis_CorrMatrix_&_DataDist.ipynb	        (Pretty Diagrams)
+* 2_Umer_and_Asim_SoftMax_Classifier.py               (Just the same as notebook without some formatting)
+* 2_Umer_and_Asim_SoftMax_Classifier_Notebook.ipynb	  (Main Solution)
 
 
-### readData.py
+### ReadData
 
 Function `mhealth_get_dataset(dir_to_files = './mhealth-data/')` is a helper function. Which will convert the log files into a **dictionary :** `[ {id:id,data: 2DArrayOfRawData ,file_location:fileLocation},{id:id,data: 2DArrayOfRawData ,file_location:fileLocation}]`
 
