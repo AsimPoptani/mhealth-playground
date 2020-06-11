@@ -7,6 +7,11 @@
 * 2_Umer_and_Asim_SoftMax_Classifier.py               (Just the same as notebook without some formatting)
 * 2_Umer_and_Asim_SoftMax_Classifier_Notebook.ipynb	  (Main Solution)
 
+### helper_functions.py
+Currently used for reading data.
+
+Function `mhealth_get_dataset(dir_to_files = './mhealth-data/')` is a helper function. Which will convert the log files into a **dictionary :** `[ {id:id,data: 2DArrayOfRawData ,file_location:fileLocation},{id:id,data: 2DArrayOfRawData ,file_location:fileLocation}]`
+
 ## Authors
 
 Asim Poptani
@@ -14,11 +19,9 @@ Asim Poptani
 Umer Fakher
 
 ________________________________________________________________________________________________________________________________________
-# Messy Thoughts during Development
+## Messy Thoughts during Development
 
-### ReadData
 
-Function `mhealth_get_dataset(dir_to_files = './mhealth-data/')` is a helper function. Which will convert the log files into a **dictionary :** `[ {id:id,data: 2DArrayOfRawData ,file_location:fileLocation},{id:id,data: 2DArrayOfRawData ,file_location:fileLocation}]`
 
 ## Ideas (if you have any add them below)
 **UF:** I added some intial ideas but these were before my data exploration.
