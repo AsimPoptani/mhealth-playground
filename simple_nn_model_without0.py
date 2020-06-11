@@ -19,12 +19,12 @@ data_length = 2
 dataset=mhealth_get_dataset()
 
 # shuffle dataset
-random.shuffle(dataset)
+# random.shuffle(dataset)
 
 
 # training_users,test_data = dataset[:6], dataset[6:]
 # training_users,test_data = dataset[:8], dataset[8:] # get 8 training users and 2 test users
-training_users,test_data = dataset[:8], dataset[8:]
+training_users,test_data = dataset[0:1], dataset[1:2]
 
 
 # Remove all records with a certain value from the list of lists aka the 2D list under the 'data' key in each user dictionary in the list of user information dictionaries.
@@ -188,3 +188,12 @@ model.fit(training_data,training_labels,validation_data=(test_data,test_labels),
 # With Denses in the middle 2000 instead of 500
 # Epoch 200/200
 # 95/95 [==============================] - 0s 717us/sample - loss: 2.9468e-04 - acc: 1.0000 - val_loss: 42.0160 - val_acc: 0.6250
+
+
+
+
+# When trained and tested on a single user which are the same : 
+
+# Epoch 200/200
+# 12/12 [==============================] - 0s 1ms/sample - loss: 4.7087e-06 - acc: 1.0000 - val_loss: 132.4840 - val_acc: 0.3333
+# PS H:\delte\mhealth-playground>
