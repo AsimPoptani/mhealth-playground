@@ -18,7 +18,7 @@ Function `mhealth_get_dataset(dir_to_files = './mhealth-data/')` is a helper fun
 
 ### Umer Fakher
 
-Ready to develop in a hospital near you.
+Ready to develop at a hospital near you.
 ________________________________________________________________________________________________________________________________________
 ## Messy Thoughts during Development
 
