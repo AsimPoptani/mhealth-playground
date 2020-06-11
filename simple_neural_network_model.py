@@ -1,3 +1,4 @@
+# Imports
 from helper_functions import mhealth_get_dataset
 import random
 import tensorflow as tf
@@ -17,9 +18,10 @@ dataset=mhealth_get_dataset()
 # shuffle dataset
 random.shuffle(dataset)
 
-# get 6 training users and 4 test users
+# Get 6 training users and 4 test users
 training_users,test_data = dataset[:6], dataset[6:]
 
+# These two dictionaries keep track 
 training_data_pre  = defaultdict(list) 
 test_data_pre =defaultdict(list)
 
